@@ -1,0 +1,15 @@
+//Breeds
+export const LOAD_BREEDS = 'LOAD_BREEDS';
+export const SET_BREEDS = 'SET_BREEDS';
+
+//Modal
+export const OPEN_MODAL = 'OPEN_MODAL';
+export const CLOSE_MODAL = 'CLOSE_MODAL';
+export const LEAVING_ANIMATION_START = 'LEAVING_ANIMATION_START';
+export const LEAVING_ANIMATION_FINISH = 'LEAVING_ANIMATION_FINISH';
+export const LOAD_BREED_IMAGES = 'LOAD_BREED_IMAGES';
+export const SET_BREED_IMAGES = 'SET_IMAGES';
+
+//Errors
+export const SET_BREEDS_ERROR = 'SET_BREEDS_ERROR';
+export const SET_BREED_IMAGES_ERROR = 'SET_IMAGES_ERROR';

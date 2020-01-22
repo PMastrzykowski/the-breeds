@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip">
+      <use xlink:href="#fill"/>
+    </clipPath>
+    <clipPath id="clip-2">
+      <use xlink:href="#fill-2"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_274" data-name="Grupo 274" transform="translate(230.027 -3282.973)">
+    <rect id="Rectángulo_219" data-name="Rectángulo 219" width="20" height="20" transform="translate(-230.027 3282.973)" fill="none"/>
+    <g id="Grupo_273" data-name="Grupo 273" transform="translate(-230 3292.796) rotate(-45)">
+      <g id="Rectángulo_3" data-name="Rectángulo 3" transform="translate(0 0)" fill="none" stroke="#fff" stroke-width="3">
+        <rect id="fill" width="1.259" height="13.854" stroke="none"/>
+        <path d="M0,1.5h1.2594552040100098M1.5,0v13.854007720947266M1.2594552040100098,12.354007720947266h-1.2594552040100098M-0.24054479598999023,13.854007720947266v-13.854007720947266" fill="none" clip-path="url(#clip)"/>
+      </g>
+      <g id="Rectángulo_4" data-name="Rectángulo 4" transform="translate(13.854 12.595) rotate(90)" fill="none" stroke="#fff" stroke-width="3">
+        <rect id="fill-2" width="1.259" height="13.854" stroke="none"/>
+        <path d="M0,1.5h1.2594552040100098M1.5,0v13.854007720947266M1.2594552040100098,12.354007720947266h-1.2594552040100098M-0.24054479598999023,13.854007720947266v-13.854007720947266" fill="none" clip-path="url(#clip-2)"/>
+      </g>
+    </g>
+  </g>
+</svg>

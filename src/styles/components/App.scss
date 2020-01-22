@@ -1,0 +1,154 @@
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: $font-1;
+  scroll-behavior: smooth;
+  .error {
+    color: $color-4;
+    text-align: center;
+  }
+  .loader {
+    width: 100px;
+    height: 100px;
+    @include animation(rotating, 2s, linear, infinite);
+    margin: 0px auto;
+    background-image: $image-loader;
+  }
+  .title {
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    height: calc(50vh - 50px);
+    width: 100%;
+    font-size: 50px;
+    .subtitle {
+      margin-top: 15px;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .scroll-shadow {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    pointer-events: none;
+    &.top {
+      top: 0;
+      @include gradient(180deg, rgba(255, 255, 255, 1), 0%, rgba(255, 255, 255, 0), 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    }
+    &.bottom {
+      bottom: 0;
+      @include gradient(0deg, rgba(255, 255, 255, 1), 0%, rgba(255, 255, 255, 0), 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    }
+  }
+  #modal-content {
+    .title {
+      margin-top: 100px;
+    }
+    .images {
+      max-width: 400px;
+      margin: 0 auto;
+      @include flexbox();
+      @include flex-direction(column);
+      @include align-items(center);
+      img {
+        max-width: 100%;
+        max-height: 400px;
+        width: min-content;
+        margin: 100px 0;
+      }
+    }
+  }
+  .all-breeds {
+    width: max-content;
+    margin: 0 auto 50vh;
+    .breed-name {
+      z-index: 0;
+      margin: 40px;
+      height: 60px;
+      font-size: 40px;
+      color: $color-2;
+      list-style: none;
+      @include flexbox();
+      @include align-items(center);
+      -webkit-perspective: 800px;
+      perspective: 800px;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      will-change: all;
+      border-radius: 0px;
+      cursor: pointer;
+      box-sizing: border-box;
+      transition: filter 0.2s;
+      &.breed-subbreed {
+        padding-left: 20px;
+        color: $color-2;
+        font-size: 30px;
+        margin-left: 100px;
+        border: 2px solid $color-2;
+      }
+      &:hover {
+        filter: drop-shadow($shadow-1);
+      }
+    }
+  }
+  .custom-select {
+    position: relative;
+    display: inline-block;
+    @include user-select-none();
+    select {
+      display: none;
+    }
+    .custom-select-button {
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      margin: 10px;
+      padding: 5px 50px 5px 5px;
+      width: 50px;
+      height: 40px;
+      color: $color-1;
+      background: $color-2;
+      cursor: pointer;
+      .custom-select-button-icon{
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        width: 20px;
+        height: 20px;
+        background-image: $image-arrow-down;
+        pointer-events: none;
+      }
+    }
+    .expandable {
+      width: calc(100% - 20px);
+      position: absolute;
+      top: 100%;
+      left: 10px;
+      background: $color-1;
+      z-index: 5;
+      .option {
+        padding: 10px;
+        cursor: pointer;
+        &:hover {
+          background: $color-2;
+          color: $color-1;
+        }
+      }
+    }
+    .expandable-close {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: transparent;
+      width: 100vw;
+      height: 100vh;
+      z-index: 4;
+    }
+  }
+}

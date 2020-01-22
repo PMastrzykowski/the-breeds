@@ -1,0 +1,34 @@
+.modal-background {
+  background: $color-1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  .close {
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    position: fixed;
+    left: 0;
+    top: 0;
+    outline: none;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background: $color-2;
+    border: 0;
+    &:hover {
+      background: $color-3;
+    }
+    .arrow-left {
+      width: 47px;
+      height: 47px;
+      background: $image-arrow-left;
+    }
+  }
+}
